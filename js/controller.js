@@ -23,9 +23,42 @@
     $scope.cancelDc = function(){
       console.log("this is to Cancel the dc");
     }
-    $scope.change = function(){
+    $scope.dcDetails = function(){
       var regNo = $scope.regNo;
-      console.log("Field Changes", regNo);
+      var dcDate = $scope.dcDate;
+      var dcCustomerName = $scope.dcCustomerName;
+      var flag = 0;
+      
+      regNo == null ? flag=1 : null;
+      dcDate == null ? flag=1 : null;
+      dcCustomerName == null ? flag=1 : null;
+      
+      if(flag == 1){
+        console.log("fields needed to be filled");
+      }
     }
+    
+    $scope.productAdd = function(){
+      var dcItemCode = $scope.dcItemCode;
+      var dcProductName = $scope.dcProductName;
+      var dcQty = $scope.dcQty;
+      var dcRate = $scope.dcRate;
+      var flag = 0;
+      
+      dcItemCode == null ? flag = 1 : flag = 0;
+      dcProductName == null ? flag = 1 : flag = 0;
+      dcQty == null ? flag = 1 : flag = 0;
+      dcRate == null ? flag = 1 : flag = 0;
+      
+      var col = '<tr><td>'+dcItemCode+'</td> <td>'+dcProductName+'</td> <td class="text-center">'+dcQty+'</td> <td class="text-center">'+dcRate+'</td> <td class="text-center">total</td> <td><a href="#" class="btn btn-danger btn-xs">Del</a> <a href="#" class="btn btn-danger btn-xs">Edit</a></td></tr>';
+      
+      if(flag == 1){
+        console.log("fields need ot be filled");
+      }else{
+        $('.productList').append(col);
+      }
+      
+    }
+    
   });
 }(window, jQuery));

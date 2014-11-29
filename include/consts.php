@@ -5,7 +5,9 @@ $std = array(
 );
 $js = array(
     "jquery" => "./js/jquery-1.11.1.min.js",
+    "jqueryUi" => "./js/jquery-ui.js",
     "bootstrap" => "./js/bootstrap.min.js",
+//    "bootstrapDate" => "./js/bootstrap-datetimepicker.js",
     "angularjs" => "./js/angular.min.js",
     "angular-resource" => "./js/angular-resource.min.js",
     "angular-route" => "./js/angular-route.min.js",
@@ -16,6 +18,7 @@ $js = array(
 );
 $css = array(
     "bootstrap" => "./css/bootstrap.min.css",
-    "custom" => "./css/basicStyles.css"
+    "custom" => "./css/basicStyles.css",
+    "jqueryuiStyles" => "./css/jquery-ui.css"
 );
 ?>

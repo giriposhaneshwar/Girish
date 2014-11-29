@@ -11,6 +11,7 @@ include './include/header.php';
 
 <!-- Body Section  -->
 <div class="bodySection" ng-controller="bodyController">
+  {{regNo}}
   <div class="bodyInner">
     <ul>
       <li ng-repeat="item in mods"><a href="./{{item | lowercase}}.php">{{item | uppercase}}</a></li>

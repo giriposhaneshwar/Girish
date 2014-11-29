@@ -11,28 +11,28 @@
     </div>
     <div class="dcheader">
       <label>DC No.</label>
-      <input type="text" name="regNo" id="regNo" placeholder="001" ng-model="regNo" ng-change="change()"/>
+      <input type="text" name="regNo" id="regNo" placeholder="001" ng-model="regNo" ng-change="dcDetails()"/>
 
       <label>Date</label>
-      <input type="text" name="dcDate" id="dcDate" placeholder="DD/MM/YYYY" />
+      <input type="text" name="dcDate" id="dcDate" placeholder="DD/MM/YYYY" ng-model="dcDate" ng-change="dcDetails()"/>
 
       <label>Customer</label>
-      <input type="text" name="dcCustomerName" id="dcCustomerName" placeholder="Customer Name" />
+      <input type="text" name="dcCustomerName" id="dcCustomerName" placeholder="Customer Name" ng-model="dcCustomerName" ng-change="dcDetails()"/>
     </div>
     <div class="dcBody">
 
       <label>Item Code</label>
-      <input type="text" name="dcItemCode" id="dcItemCode" placeholder="001" />
+      <input type="text" name="dcItemCode" id="dcItemCode" placeholder="001" ng-model="dcItemCode" ng-blur="productAdd()"/>
 
 
       <label>Product Name</label>
-      <input type="text" name="dcCustomerName" id="dcProductName" placeholder="Customer Name" />
+      <input type="text" name="dcCustomerName" id="dcProductName" placeholder="Customer Name" ng-model="dcProductName" ng-blur="productAdd()"/>
 
       <label>Qty</label>
-      <input type="text" name="dcQty" id="dcQty" placeholder="5" />
+      <input type="text" name="dcQty" id="dcQty" placeholder="5" ng-model="dcQty" ng-blur="productAdd()"/>
 
       <label>Rate</label>
-      <input type="text" name="dcRate" id="dcRate" placeholder="1200" />
+      <input type="text" name="dcRate" id="dcRate" placeholder="1200" ng-model="dcRate" ng-blur="productAdd()"/>
     </div>
     <div class="dcItemContainer">
       <table class="table">
@@ -44,18 +44,13 @@
           <th class="text-center">Amount</th>
           <th>Options</th>
         </tr>
-        <?php
-        for ($i = 0; $i <= 5; $i++) {
-          echo '<tr>
-          <td>' . ($i + 1) . '</td>
-          <td>Name of the product</td>
-          <td class="text-center">8</td>
-          <td class="text-center">1200</td>
-          <td class="text-center">' . (8 * 1200) . '</td>
-          <td><a href="" class="btn btn-danger btn-xs">Del</a> <a href="" class="btn btn-danger btn-xs">Edit</a></td>
-        </tr>';
-        }
-        ?>
+        <tr>
+          <td colspan="6">
+            <table class="table productList">
+              
+            </table>
+          </td>
+        </tr>
         <tr>
           <th colspan="4" style="text-align: right;padding-right: 20px; text-transform: uppercase;">Total</th>
           <th class="text-center"><?php echo (8 * 1200 * 6); ?></th>
@@ -95,3 +90,8 @@
     </div>
   </form>
 </div>
+<script type="text/javascript">
+  $(function () {
+    $('#dcDate').datepicker();
+  });
+</script>
