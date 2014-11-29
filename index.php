@@ -1,4 +1,9 @@
 <?php
+include '../config/const.php';
+include '../config/dbCon.php';
+
+$db = new dbCon();
+
 include './include/consts.php';
 include './include/vars.php';
 include './include/header.php';
@@ -12,11 +17,5 @@ include './include/header.php';
     </ul>
   </div>
 </div>
-
-
-
-
-
-
 
 <?php include './include/footer.php'; ?>
