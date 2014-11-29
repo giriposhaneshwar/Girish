@@ -3,7 +3,7 @@
 class dbCon extends PDO {
 
     function __construct() {
-        include './includes/db/const.php';
+        include './config/const.php';
 
         try {
             $dsn = DB_TYPE . ":host=" . DB_HOST . ";dbname=" . DB_DB;

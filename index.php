@@ -1,6 +1,6 @@
 <?php
-include '../config/const.php';
-include '../config/dbCon.php';
+include './config/const.php';
+include './config/dbCon.php';
 
 $db = new dbCon();
 

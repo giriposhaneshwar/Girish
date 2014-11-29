@@ -18,9 +18,9 @@ if (IP === "127.0.0.1") {
 // Database Constants
   @define('DB_TYPE', "mysql");
   @define('DB_HOST', "localhost");
-  @define('DB_USER', "icsitpar_soft");
+  @define('DB_USER', "icsitpar_dcsoft");
   @define('DB_PASS', "dcsoft@28");
-  @define('DB_DB', "dcsoft");
+  @define('DB_DB', "icsitpar_dcsoft");
 } else {
   
 }
