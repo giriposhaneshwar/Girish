@@ -1,0 +1,113 @@
+body{
+  margin-top: 55px;
+}
+.headerSection .headerInner{
+  background-color: #fff;
+  color: #000;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{
+  color: #fff;
+  background-color: #c00;
+  box-shadow: 0px 2px 3px #888;
+}
+.navbar-default .navbar-nav>li>a{
+  color: #000;
+}
+label{
+  font-weight: normal;
+  color: #000;
+}
+/* ----------- DC Form Styles */
+.dcContainer{
+  display: block;
+  width: 800px;
+  margin: 80px auto 0px;
+  padding: 0px 15px 10px;
+}
+
+.dcContainer h3{
+  display: block;
+  marign: 0px;
+  padding: 0px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 8px;
+  text-transform: uppercase;
+}
+.dcContainer label{
+  padding-left: 10px;
+  color: #303030;
+}
+.dcContainer input[type="text"]{
+  padding: 5px;
+  border-radius: 5px;
+  border :1px solid #ccc;
+  width: 200px;
+}
+.dcContainer .dcTitle{
+  display: block;
+  padding: 8px 0px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 12px;
+}
+.dcContainer .dcHeading{
+  font-size: 2em;
+  font-weight: bold;
+}
+.dcContainer .butActions{
+  text-align: right;
+}
+
+.dcContainer .dcheader{
+  display: block;
+  padding: 8px;
+  background-color: #efefef;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+.dcContainer .dcheader label{
+  font-weight: bold;
+}
+
+.dcContainer .dcBody{
+  display: block;
+  padding: 15px 0px;
+}
+.dcContainer #dcCustomerName{
+  width: 390px;
+}
+.dcContainer #regNo, .dcContainer #dcQty{
+  width: 60px;
+  text-align: center;
+}
+.dcContainer #dcItemCode, .dcContainer #dcRate{
+  width: 80px;
+  text-align: center;
+}
+.dcContainer #dcDate{
+  width: 100px;
+}
+.dcContainer .dcBody #dcProductName{
+  width: 250px;
+}
+.dcContainer .dcItemContainer{
+  display: block;
+  border-bottom: 1px solid #ccc;
+}
+.dcContainer .vatCalc{
+  display: block;
+  margin-left: 400px;
+}
+.dcContainer .vatCalc label{
+  width: 150px;
+  text-align: right;
+  padding-right: 10px;
+  margin: 8px 0px;
+}
+.btn-danger{
+  background-color: #c00;
+  box-shadow: 1px 1px 3px #888;
+  margin-top: 5px;
+}
+.btn-danger:hover{
+  background-color: #a00;
+}
