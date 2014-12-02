@@ -14,5 +14,14 @@ html, body{
 	display: block;
 	width: 100%;
 	min-width: 100%;
+}
+
+.warper{
+	display: block;
+}
+.leftC, .rightC{
+	display: inline-block;
 	border: 1px solid #000;
+	margin: 0px;
+	padding: 0px;
 }
