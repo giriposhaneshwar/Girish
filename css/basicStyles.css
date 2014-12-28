@@ -2,7 +2,7 @@ html, body{
 	margin: 0px;
 	padding: 0px;
 	font-family: "arial";
-	background-color: #f1f1f1;
+	background-color: #fff;
 	min-height: 100%;
 	height: 100%;
 	min-width: 100%;
@@ -14,14 +14,330 @@ html, body{
 	display: block;
 	width: 100%;
 	min-width: 100%;
+	height: 100%;
+	min-height: 100%;
 }
 
 .warper{
 	display: block;
+	width: 100%;
+	min-width: 100%;
+	height: 100%;
+	min-height: 100%;
 }
 .leftC, .rightC{
 	display: inline-block;
-	border: 1px solid #000;
 	margin: 0px;
 	padding: 0px;
+	vertical-align: top;
+}	
+.rightC{
+	padding: 50px 20px 10px 10px;
 }
+.leftC{
+	width: 200px;
+	margin-right: 20px;
+	background-color: #f2f2f2;
+	padding-right: 8px;
+	border-right: 1px solid #ccc;
+}
+.logoContainer{
+	display: block;
+	padding: 12px 0px;
+	text-align: center;
+	background-color: #c00;
+	color: #fff;
+	font-weight: bold;
+	box-shadow: 1px 1px 2px #888;
+	border-radius: 0px 0px 12px 0px;
+}
+.navIcons{
+	display: block;
+	margin-top: 25px;
+}
+.navIcons ul.modules{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+.navIcons ul.modules li{
+	display: block;
+}
+.navIcons ul.modules li a{
+	display: block;
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+	padding: 8px 12px;
+	background-color: #ccc;
+	margin: 3px 0px;
+	border-radius: 0px 12px 12px 0px;
+}
+.navIcons ul.modules li a:hover,
+.navIcons ul.modules li#active a
+{
+	background-color: #303030;
+	color: #fff;
+}
+
+/* -------------   DC FORM STYLES START */
+.dcForm{
+	font-size: 0.86em;
+	width: 750px;
+	margin: 0px auto;
+}
+.dcForm h1{
+	font-size: 1.5em;
+	font-weight: normal;
+	color: #fff;
+	text-align: center;
+	background-color: #c00;
+	padding: 8px 0px;
+	border-radius: 8px;
+}
+.dcForm .mainSection, .dcEntry{
+	display: block;
+	padding: 12px 8px;
+	border-radius: 8px;
+}
+.mainSection{
+	border: 1px solid #ccc;
+	background-color: #f2f2f2;
+}
+.dcForm ul{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+.dcForm ul li:first-child{
+	margin-left: 0px;
+}
+.dcForm ul li{
+	display: inline-block;
+	margin-left: 20px;
+}
+.dcForm ul li label{
+	color: #555;
+}
+.dcForm ul li label:after{
+	content: " : ";
+}
+.dcForm ul li input[type="text"]{
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+.dcForm ul li input[name="dcNum"]{
+	width: 75px;
+	text-align: center;
+}
+.dcForm ul li input[name="dcDate"]{
+	width: 100px;
+	text-align: center;
+}
+.dcForm ul li input[name="dcCustomer"]{
+	width: 300px;
+	text-align: left;
+}
+
+.dcItemContainer{
+	display: block;
+}
+
+.dcEntry{
+	background-color: #e1e1e1;
+	margin: 8px 0px;
+	border: 1px solid #ccc;
+}
+.dcForm ul li input[name="itemCode"]{
+	width: 75px;
+	text-align: left;
+}
+.dcForm ul li input[name="productName"]{
+	width: 150px;
+	text-align: left;
+}
+.dcForm ul li input[name="qty"]{
+	width: 50px;
+	text-align: left;
+}
+.dcForm ul li input[name="rate"]{
+	width: 75px;
+	text-align: left;
+}
+.dcItemEntryList{
+	display: none;
+}
+.dcItemEntryList table{
+	display: table;
+	border-collapse:collapse;
+	border-radius: 8px;
+	border-color: none;
+	border: none;
+}
+.dcItemEntryList > table th, .dcItemEntryList > table td{
+	padding: 5px 8px;
+	border: 1px solid #ccc;
+}
+.dcItemEntryList > table th{
+	background-color: #303030;
+	color: #fff;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+.dcItemEntryList > table td:nth-child(1){
+	width: 50px;
+}
+.dcItemEntryList > table td:nth-child(2){
+	text-align: left;
+	padding-left: 10px;
+}
+.dcItemEntryList > table td:nth-child(3){
+	width: 50px;
+}
+.dcItemEntryList > table td:nth-child(4), .dcItemEntryList > table td:nth-child(5){
+	text-align: right;
+	padding-right: 10px; 
+	width: 100px;
+}
+.dcItemEntryList > table td:nth-child(6){
+	width: 50px;
+}
+.dcItemEntryList > table tr:nth-child(n+2){
+	text-align: center;
+}
+.totalRow{
+	display: block;
+	font-weight: bold;
+	color: #c00;
+	border-top:1px solid #000;
+	border-bottom: 1px solid #000; 
+}
+.totalRow h4, .totalRow .rTotal{
+	display: inline-block;
+	font-weight: bold;
+	color: #c00;
+	padding: 5px 12px;
+	text-align: right;
+}
+.totalRow h4{
+	width: 74%;
+	padding-right: 20px;
+	text-transform: uppercase;
+}
+.grandTotal{
+	display: block;
+	padding: 10px 0px;
+}
+.grandTotal .wordtotal, .grandTotal .vatCalc{
+	display: inline-block;
+	vertical-align: top;
+}
+.grandTotal .wordtotal{
+	width: 65%;
+	font-size: 0.96em;
+	border-top: 1px solid #ccc;
+	padding: 8px;
+}
+.grandTotal .vatCalc{
+	width: 30%;
+}
+.grandTotal .vatCalc label{
+	display: block;
+	width: 100px;
+	float: left;
+	padding: 8px 0px;
+}
+.grandTotal .vatCalc b{
+	display: block;
+	float: right;
+	width: 100px;
+	padding: 8px 0px;
+}
+.dcForm .btnPanel{
+	text-align: center;
+}
+.dcForm .btnPanel button{
+	background-color: #c00;
+	border: 1px solid #ccc;
+	color: #fff;
+	border-radius: 5px;
+	padding: 5px 8px;
+	box-shadow: 0px 0px 3px #888;
+	cursor: pointer;
+}
+/* -------------   DC FORM STYLES END */
+
+/* -------------   CUSTOMER FORM START */
+.custContainer{
+	display: block;
+	width: 800px;
+	margin: 0px auto;
+}
+.custContainer .custHeading{
+	display: block;
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 8px 0px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 8px;
+}
+.custContainer .newEntry, .showList, .loadFile{
+	display: none;
+}
+.custContainer ul{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+.custContainer ul li{
+	display: block;
+	padding: 8px 0px;
+}
+.custContainer ul li label{
+	display: block;
+	float: left;
+	width: 100px;
+	text-align: left;
+	padding: 8px 0px;
+}
+.custContainer ul li input[type="text"], .custContainer ul li textarea{
+	width: 250px;
+	padding: 8px;
+}
+.custContainer ul li input[type="submit"]{
+	background-color: #c00;
+	color: #fff;
+	padding: 8px 12px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+}
+.custContainer .loadFile ul li{
+	display: inline-block;
+	padding: 8px;
+}
+.custContainer .loadFile ul li label{
+	width: 200px;
+}
+.custContainer .toggleCust{
+	display: block;
+}
+.custContainer .toggleCust ul{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+.custContainer .toggleCust ul li{
+	display: inline-block;
+	margin: 0px;
+}
+.custContainer .toggleCust ul li a{
+	display: block;
+	padding: 8px 15px;
+	border: 1px solid #000;
+	background-color: #c00;
+	color: #fff;
+	text-decoration: none;
+}
+/* -------------   CUSTOMER FORM END */
+
